@@ -28,8 +28,19 @@ body {
   border: 1px solid #000;
   border-radius: 5px;
   background-color: #65727c;
+  min-height: 100px;
   grid-column: 1 / span 3;
   margin: 5px;
+}
+
+.valores {
+  display: flex;
+  height: 90%;
+  width: 95%;
+  justify-content: end;
+  align-items: end;
+  font-size: 2.2em;
+  color: #fff;
 }
 
 .container-numeros {
@@ -41,7 +52,10 @@ body {
   margin: 5px;
 }
 
-.numeros {
+.numeros,
+.apagar,
+.apagar-ultimo,
+.raiz {
   border: 1px solid #000;
   background-color: #535b61;
   border-radius: 5px;
@@ -63,6 +77,7 @@ body {
 .funcoes div {
   border-radius: 5px;
   background-color: #535b61;
+  font-size: 1.2em;
   color: #fff;
   border: 1px solid #000;
   display: flex;
@@ -72,6 +87,9 @@ body {
 }
 
 .numeros:hover,
-.funcoes div:hover {
+.funcoes div:hover,
+.apagar:hover,
+.apagar-ultimo:hover,
+.raiz:hover {
   background-color: #65727c;
 }
