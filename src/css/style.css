@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: #fff;
+  color: #333;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  background-color: #3e4144;
+  border: 1px solid #000;
+  height: 400px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.tela {
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #65727c;
+  grid-column: 1 / span 3;
+  margin: 5px;
+}
+
+.container-numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+  gap: 5px;
+  margin: 5px;
+}
+
+.numeros {
+  border: 1px solid #000;
+  background-color: #535b61;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.funcoes {
+  display: grid;
+  gap: 5px;
+  margin: 5px;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.funcoes div {
+  border-radius: 5px;
+  background-color: #535b61;
+  color: #fff;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.numeros:hover,
+.funcoes div:hover {
+  background-color: #65727c;
+}
