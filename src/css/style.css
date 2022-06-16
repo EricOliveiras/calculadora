@@ -17,6 +17,8 @@ body {
 
 .container {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
   background-color: #3e4144;
   border: 1px solid #000;
   height: 400px;
@@ -29,7 +31,8 @@ body {
   border-radius: 5px;
   background-color: #65727c;
   min-height: 100px;
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
+  grid-row: 1;
   margin: 5px;
 }
 
@@ -39,14 +42,14 @@ body {
   width: 95%;
   justify-content: end;
   align-items: end;
-  font-size: 2.2em;
+  font-size: 2.8em;
   color: #fff;
 }
 
 .container-numeros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
   grid-row: 2 / span 2;
   gap: 5px;
   margin: 5px;
@@ -55,7 +58,7 @@ body {
 .numeros,
 .apagar,
 .apagar-ultimo,
-.raiz {
+.on-off {
   border: 1px solid #000;
   background-color: #535b61;
   border-radius: 5px;
@@ -69,8 +72,8 @@ body {
 .funcoes {
   display: grid;
   gap: 5px;
-  margin: 5px;
-  grid-column: 3 / span 1;
+  margin: 5px 7px 5px 0;
+  grid-column: 4 / span 1;
   grid-row: 2 / span 2;
 }
 
@@ -89,7 +92,6 @@ body {
 .numeros:hover,
 .funcoes div:hover,
 .apagar:hover,
-.apagar-ultimo:hover,
-.raiz:hover {
+.apagar-ultimo:hover {
   background-color: #65727c;
 }
